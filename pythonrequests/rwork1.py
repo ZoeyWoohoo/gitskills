@@ -12,7 +12,7 @@ response = requests.get(index_url)
 # wtf.close()
 
 page = response.content
-page = BeautifulSoup(response.content)
+page = BeautifulSoup(page)
 # print type(page)
 # page = page.decode('utf-8')
 # page = page.encode('gbk')
