@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block page_content %}
+<h1 style="margin-top: 19px;">Register</h1>
+<form method="POST">
+	{{ form.hidden_tag() }}    <!-- 用于激活CSRF保护 -->
+	{{ form.email.label }} {{ form.email(class='inputstyle') }}
+	{{ form.username.label }} {{ form.username(class='inputstyle') }}
+	{{ form.password.label }} {{ form.password(class='inputstyle') }}
+	{{ form.password2.label }} {{ form.password2(class='inputstyle') }}
+	{{ form.submit(class='submitstyle') }}
+</form>
+{% endblock %}

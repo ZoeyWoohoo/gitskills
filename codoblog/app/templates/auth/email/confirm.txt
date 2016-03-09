@@ -1,0 +1,15 @@
+Dear {{ user.username }},
+
+Welcome to Codo!
+
+To confirm your account please click on the following link:
+
+{{ url_for('auth.confirm', token=token, _external=True) }}
+
+please check it in 1 hour before it expire!Thank you and wish you will have fun in codo.
+
+Sincerely,
+
+The Codo Author
+
+Note:replies to this email address are not monitored.

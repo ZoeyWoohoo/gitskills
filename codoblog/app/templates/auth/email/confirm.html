@@ -1,0 +1,9 @@
+<p>Dear {{ user.username }},</p>
+<p>Welcome to <b>Codo</b>!</p>
+<p>To confirm your account please <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">click here</a>.</p>
+<p>Alternatively, you can paste the following link in your browser's address bar:</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>Please check it in 1 hour before it expire!Thank you and wish you will have fun in codo.</p>
+<p>Sincerely,</p>
+<p>The Codo Author</p>
+<p><small>Note: replies to this email address are not monitored.</small></p>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style>
+    </style>
+{% endblock %}
+{% block page_content %}
+<p>
+	New user?
+	<a class="loginlink" href="{{ url_for('auth.register') }}">Click here to register</a>
+</p>
+<h1>Login</h1>
+<form method="POST">
+	{{ form.hidden_tag() }}    <!-- 用于激活CSRF保护 -->
+	{{ form.email.label }} {{ form.email(class='inputstyle') }}
+	{{ form.password.label }} {{ form.password(class='inputstyle') }}
+	{{ form.remember_me(class='') }}
+	{{ form.submit(class='submitstyle') }}
+</form>
+{% endblock %}

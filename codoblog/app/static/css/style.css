@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	color: rgb(0,255,0);
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	background: black;
+}
+
+
+
+
+
+
+
+
+
+
+.basetop{
+	margin-top: 27px;
+	margin-left: 1227px;
+	font-size: x-large;
+}
+.baselink:hover{
+	color: yellow;
+}
+/*base.html里的一些属性*/
+.indexp{
+	margin-top: 50px;
+	font-size: larger;
+}
+.indexp2{
+	font-size: x-large;
+}
+.indexp2.span{
+	display: inline-block;
+	color: rgb(0,255,0);
+}
+/*index.html里的一些p标签属性*/
+.loginlink{
+	color: yellow;
+}
+/*login.html里的链接属性*/
+
+
+
+
+
+
+
+
+
+
+.errorstyle{
+	text-align: center;
+	line-height: 400px;
+}
+
+.inputstyle{
+	/*display: block;*/
+	/*width: 150px;*/
+	font-size: 15px;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	background-color: black;
+	border: 1px solid rgb(0,255,0);
+}
+.inputstyle:hover{
+
+}
+.submitstyle{
+	/*display: block;*/
+	font-size: 15px;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	background-color: black;
+	border: 1px solid rgb(0,255,0);
+}
+.submitstyle:hover{
+
+}

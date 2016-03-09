@@ -1,0 +1,1 @@
+Master,there is a new user join us!His/Her name is {{user}},go to check out and welcome him/her.
